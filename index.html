@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="img/logo-square.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <title>Travelo</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="container navbar">
+            <img src="img/logo.png" alt="Travelo Logo" class="navbarLogo">
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="#home" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#package" class="navbar-link">Our Package</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#call-us" class="navbar-link">Call Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END -->
+    <!-- HOME -->
+    <div id="home" class="container mb-5">
+        <div class="row text-center-gap mt-5">
+            <p class="headline">Bersama Travelo Lebih Menyenangkan</p>
+            <p class="intro">Jelajahi dunia yang indah dengan satu sentuhan</p>
+        </div>
+        <div class="row mt-5 col-gap">
+            <div class="col">
+                <div class="content-slide">
+                    <div class="imgslide fade">
+                        <div class="numberslide">1 / 3</div>
+                        <img src="img/beach.jpg" alt="" class="img-Slide">
+                        <div class="text">Pantai</div>
+                    </div>
+        
+                    <div class="imgslide fade">
+                        <div class="numberslide">2 / 3</div>
+                        <img src="img/borobudur.jpg" alt="" class="img-Slide">
+                        <div class="text">Candi Borobudur</div>
+                    </div>
+        
+                    <div class="imgslide fade">
+                        <div class="numberslide">3 / 3</div>
+                        <img src="img/seoul.jpg" alt="" class="img-Slide">
+                        <div class="text">Seoul</div>
+                    </div>
+        
+                    <a class="prev" onClick="nextslide(-1)">&#10094;</a>
+                    <a class="next" onClick="nextslide(1)">&#10095;</a> 
+                </div>
+                <p class="user-testimoni mt-5">"Liburanku jadi semakin menyenangkan bersama<br> Travelo, travel agent kepercayaanku"</p>
+                <div class="testimoni mt-2">
+                    <div class="testi-img">
+                        <img src="img/user.jpg" alt="User" class="user-img">
+                    </div>
+                    <div class="testi-desc ml-2">
+                        <p class="user-nama">Florence Hughes</p>
+                        <p class="user-desc mt-1">Ibu Rumah Tangga, 28</p>
+                    </div>
+                </div>
+                <p class="deskripsi mt-5">
+                    Jelajahi dunia yang indah dengan satu sentuhan dengan pesan tiket di Travelo kamu akan dapatkan pelayanan terbaik untuk wisata liburanmu kemana saja dan kapan saja
+                </p>
+                <ul class="w-65 mt-3">
+                    <li class="benefit mt-1">
+                        <div class="benefit-num">1</div>
+                        <div class="benefit-desc ml-2">Banyak promo spesial untuk tiket dan hotel kesayanganmu.</div>
+                    </li>
+                    <li class="benefit mt-1">
+                        <div class="benefit-num">2</div>
+                        <div class="benefit-desc ml-2">Bisa melakukan transaksi dari mana saja dan kapan saja tanpa repot.</div>
+                    </li>
+                    <li class="benefit mt-1">
+                        <div class="benefit-num">3</div>
+                        <div class="benefit-desc ml-2">Transaksi dijamin aman. Keamanan dan privasi transaksi online Anda dilindungi.</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col">
+                <div class="contact-us">
+                    <div class="text-contact mb-5 mt-3">
+                        <p class="text-main">Contact Us</p>
+                        <p class="text-desc mt-2">Sales akan menghubungi Anda 1x24 jam setelah data kami terima.</p>
+                    </div>
+                    <form action="#" name="myForm" onsubmit="return validateForm()" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" name="name" id="name" class="form-input" placeholder="First and last name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" name="email" id="email" class="form-input" placeholder="example@email.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="interest" class="form-label">What are you interested in?</label>
+                            <select name="interest" id="interest" class="form-input">
+                                <option value="Japan">Japan</option>
+                                <option value="South Korea">South Korea</option>
+                                <option value="Bali">Bali</option>
+                            </select>
+                        </div>
+                        <button type="submit" name="submit" class="btn-send mb-3">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END -->
+    <!-- PACKAGE -->
+    <div id="package" class="mt-5">
+        <div class="head-package text-center-gap mb-5">
+            <p class="headline">Our Package</p>
+        </div>
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col card-package mb-2">
+                    <div class="icon-package">
+                        <img src="img/worldwide.png" alt="Icon Package" class="icon-img">
+                    </div>
+                    <div class="card-package-desc ml-2">
+                        <p class="text-main mb-1">Bali</p>
+                        <p class="text-desc p-desc">Travel dan wisata di Bali. Kunjugi cagar budaya dan kuliner yang menarik.</p>
+                    </div>
+                </div>
+                <div class="col card-package mb-2">
+                    <div class="icon-package">
+                        <img src="img/worldwide.png" alt="Icon Package" class="icon-img">
+                    </div>
+                    <div class="card-package-desc ml-2">
+                        <p class="text-main mb-1">Japan</p>
+                        <p class="text-desc p-desc">Travel dan wisata di Japan. Kunjugi cagar budaya dan kuliner yang menarik.</p>
+                    </div>
+                </div>
+                <div class="col card-package mb-2">
+                    <div class="icon-package">
+                        <img src="img/worldwide.png" alt="Icon Package" class="icon-img">
+                    </div>
+                    <div class="card-package-desc ml-2">
+                        <p class="text-main mb-1">Singapore</p>
+                        <p class="text-desc p-desc">Travel dan wisata di Singapore. Kunjugi cagar budaya dan kuliner yang menarik.</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="mb-5">
+            <div class="row">
+                <div class="col card-package mb-2">
+                    <div class="icon-package">
+                        <img src="img/worldwide.png" alt="Icon Package" class="icon-img">
+                    </div>
+                    <div class="card-package-desc ml-2">
+                        <p class="text-main mb-1">Bandung</p>
+                        <p class="text-desc p-desc">Travel dan wisata di Bandung. Kunjugi cagar budaya dan kuliner yang menarik.</p>
+                    </div>
+                </div>
+                <div class="col card-package mb-2">
+                    <div class="icon-package">
+                        <img src="img/worldwide.png" alt="Icon Package" class="icon-img">
+                    </div>
+                    <div class="card-package-desc ml-2">
+                        <p class="text-main mb-1">Surabaya</p>
+                        <p class="text-desc p-desc">Travel dan wisata di Surabaya. Kunjugi cagar budaya dan kuliner yang menarik.</p>
+                    </div>
+                </div>
+                <div class="col card-package mb-2">
+                    <div class="icon-package">
+                        <img src="img/worldwide.png" alt="Icon Package" class="icon-img">
+                    </div>
+                    <div class="card-package-desc ml-2">
+                        <p class="text-main mb-1">Bekasi</p>
+                        <p class="text-desc p-desc">Travel dan wisata di Bekasi. Kunjugi cagar budaya dan kuliner yang menarik.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END -->
+    <!-- CALL-US -->
+    <div id="call-us" class="container call-us">
+        <div class="text-center-gap mt-5">
+            <p class="headline">Mari Kita Jelajahi Dunia Lagi!</p>
+            <p class="text-desc desc-call-us">Mudahnya pesan tiket dan hotel bersama Travelo. Tidak perlu risau, hanya dengan satu sentuhan jari, tiket dan hotel yang kamu butuhkan bisa didapatkan dengan mudah.</p>
+        </div>
+        <button class="btn-call mt-5">Hubungi Kami</button>
+    </div>
+    <!-- END -->
+    <!-- FOOTER -->
+    <footer>
+        <div class="container text-center">
+            <img src="img/logo.png" alt="Travelo Logo" class="img-footer">
+            <a href="#" class="footer">Terms of Service</a>
+            <a href="#" class="footer">Privacy Policy</a>
+            <p class="footer">Copyright © Travelo. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- END -->
+    
+</body>
+
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("imgslide");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);
+    
+    }
+    
+    var slideIndex = 1;
+        showSlide(slideIndex);
+
+    function nextslide(n){
+        showSlide(slideIndex += n);
+    }
+
+    function showSlide(n) {
+        var i;
+        var slides = document.getElementsByClassName("imgslide");
+        
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+            
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+
+    }
+</script>
+
+<script>
+    function validateForm() {
+      let x = document.forms["myForm"]["name"].value;
+      let y = document.forms["myForm"]["email"].value;
+      if (x == "") {
+        alert("Nama harus diisi!");
+        return false;
+      }
+
+      if (y == "") {
+        alert("Email harus diisi!");
+        return false;
+      }
+    }
+    </script>
+
+</html>
